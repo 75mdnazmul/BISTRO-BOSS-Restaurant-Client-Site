@@ -1,0 +1,7 @@
+.Featured-Menu{
+    background: url('../../../assets/home/featured.webp') rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}

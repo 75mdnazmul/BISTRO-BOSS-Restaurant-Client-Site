@@ -1,0 +1,317 @@
+/* 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+.navber {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    transition: .4s;
+}
+
+.logo h3 {
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.logo p {
+    font-family: "Cinzel", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 7.5px;
+    padding-left: 5px;
+}
+
+.navlinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navlinks ul li {
+    display: inline-block;
+    /* Make li inline-block for better alignment */
+}
+
+.navlinks ul li a {
+    font-family: "Inter", sans-serif;
+    padding: 18px 10px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    /* Remove underline from links */
+    display: block;
+    /* Ensure the a tag fills the li */
+}
+
+.navlinks ul li a:hover,
+.navlinks ul li a.active {
+    color: yellow;
+}
+
+.navlinks ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: yellow;
+    height: 5px;
+    width: 0;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    margin: auto;
+    transition: .4s ease-in-out;
+    border-radius: 30px;
+}
+
+.navlinks ul li a:hover::after,
+.navlinks ul li a.active::after {
+    width: 100%;
+}
+
+.signIn-btn {
+    font-family: "Inter", sans-serif;
+    padding: 10px 12px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.signIn-btn:hover {
+    background: #fda706;
+    border-radius: 6px;
+}
+
+.profile-Pic {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-Pic img {
+    transition: transform 0.4s ease;
+}
+
+.profile-Pic:hover img {
+    transform: scale(1.2);
+}
+
+
+/* mobile menu icon */
+.menu {
+    display: none;
+}
+
+
+/* ###################################  Profile Sub menu  ##################################  */
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 320px;
+    height: 0px;
+    overflow: hidden;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.7);
+    transition: 1s ease-in-out;
+    border-bottom-left-radius: 30px;
+}
+
+.sub-menu-wrap.active {
+    height: 500px;
+}
+
+.sub-menu {
+    background: #1F2937;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0 10px;
+}
+
+.user-pic {
+    width: 208px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-pic img {
+    transition: transform .5s ease;
+}
+
+.user-pic:hover img {
+    transform: scale(1.2);
+}
+
+.user-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 3px;
+    width: 100%;
+    background: yellow;
+}
+
+.sub-menu-option {
+    background: #111827;
+    padding: 9px 15px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+
+.sub-menu-link p {
+    width: 80%;
+    font-size: 18px;
+    padding: 0 0 2px 7px;
+}
+
+.sub-menu-link i {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    background: #fff;
+    color: #111827;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.sub-menu-link:hover i div {
+    transform: scale(1.4);
+    transition: .8s;
+    rotate: 360deg;
+}
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: .5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(15px);
+
+}
+
+.sub-menu-link:hover p {
+    color: yellow;
+    transition: .3s;
+}
+
+.pro-icon {
+    padding-bottom: 3px;
+}
+
+/* #########################   Responsive   ################################ */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo h3 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .logo p {
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+    .navlinks ul li {
+        font-weight: 600;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+    .logo h3 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .logo p {
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+    .navlinks ul li {
+        font-weight: 600;
+    }
+
+    .navlinks {
+        position: relative;
+    }
+
+    .navlinks ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 51px;
+        right: -300px;
+        width: 240px;
+        height: 100vh;
+        background-color: #111827;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.9);
+        padding-top: 50px;
+        transition: .6s ease-in-out;
+        z-index: 10;
+    }
+
+    .navlinks ul li a::after {
+        bottom: 3px;
+    }
+
+    .navlinks ul.active {
+        right: -41px
+    }
+
+    .signIn-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .profile-Pic {
+        width: 48px;
+        height: 48px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: #ffffff;
+    }
+
+    /* ###########  Profile Sub menu  #############  */
+    .sub-menu-wrap {
+        top: 110%;
+        right: -34%;
+        z-index: 0;
+    }
+}

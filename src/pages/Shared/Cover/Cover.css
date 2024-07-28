@@ -1,0 +1,52 @@
+/* #########################   Responsive   ################################ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cover{
+        height: 300px !important;
+    }
+    .cover-content {
+        margin: 30px !important;
+    }
+
+    .cover-title {
+        font-size: 20px !important;
+    }
+    .cover-text {
+        font-size: 14px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+    .cover{
+        height: 350px !important;
+    }
+    .cover-content {
+        margin: 80px !important;
+    }
+
+    .cover-title {
+        font-size: 35px !important;
+    }
+    .cover-text {
+        font-size: 16px !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 991px) {
+    .cover{
+        height: 500px !important;
+    }
+    .cover-content {
+        margin: 120px !important;
+    }
+
+    .cover-title {
+        font-size: 50px !important;
+    }
+    .cover-text {
+        font-size: 18px !important;
+    }
+}
