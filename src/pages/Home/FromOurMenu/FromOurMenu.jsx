@@ -5,13 +5,17 @@ import MoreItemButton from "../../Shared/MoreItemButton/MoreItemButton";
 import { Link } from "react-router-dom";
 
 const FromOurMenu = () => {
-    const [menu, loading] = useMenu()
+    const [menu, loading, error] = useMenu();
     if (loading) {
         return <div className="flex items-center justify-center h-[100vh]">
             <span className="loading loading-spinner w-[50px] text-warning"></span>
         </div>;
     }
 
+    if (error) {
+        return <div>Error loading menu: {error.message}</div>;
+    }
+    
     const popular = menu.filter(item => item.category === 'popular');
     return (
         <div>
